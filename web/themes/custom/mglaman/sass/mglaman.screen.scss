@@ -1,0 +1,28 @@
+// Import Compass et others
+@import "compass";
+@import "breakpoint";
+@import "singularitygs";
+
+@import "base/**/*";
+@import "components/**/*";
+
+html, body {
+  margin: 0;
+  color: #141414;
+  background: #DFDFDF image-url('bright_squares.png');
+  font-family: $sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+body.logged-in {
+  padding-top: 29px;
+}
+
+img, .media {
+  max-width: 100%;
+  height: auto;
+}
+article {
+  @include pie-clearfix
+}

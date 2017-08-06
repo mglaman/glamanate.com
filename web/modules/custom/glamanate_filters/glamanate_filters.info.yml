@@ -1,0 +1,6 @@
+name: Glamanate Filters
+description: Filter plugins for migration
+core: 8.x
+type: module
+dependencies:
+  - filter

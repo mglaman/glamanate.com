@@ -1,0 +1,146 @@
+.l-sidebar {
+  @include breakpoint($tab, true) {
+    @include grid-span(4, 9);
+  }
+}
+
+.gravatar {
+  text-align: center;
+  img {
+    border-radius: 50%;
+    border: 1px solid #e0e0e0;
+    padding: 3px;
+    background: #eaeaea;
+  }
+}
+.card__social-links {
+  text-align: center;
+  padding: 3% 0;
+  ul.menu {
+    padding: 0;
+    text-align: center;
+  }
+}
+.social--links {
+  display: inline-block;
+  text-align: center;
+  color: #4d4d4d;
+  .helper-text {
+    display: none;
+  }
+  .fa {
+    font-size: 26px;
+  }
+}
+.view-tag-cloud {
+  @include pie-clearfix;
+  ul {
+    text-align: left;
+    li {
+      display: inline-block;
+      margin: 0 0 5px;
+      background-color: #c0392b;
+      font-size: 13px;
+      color: lighten(#ecf0f1, 10%);
+      @include transition-property(background-color);
+      @include transition-duration(0.1s);
+      &:hover {
+        background-color: darken(#c0392b, 10%);
+      }
+      a {
+        display: block;
+        padding: 4px;
+        color: inherit;
+        font-weight: 100;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.block--site-search {
+  .views-exposed-widgets {
+    margin-bottom: 0;
+    float: none;
+  }
+  .views-exposed-form .views-exposed-widget {
+    padding: 0;
+    float: none;
+  }
+  .form-type-textfield input {
+    padding: 10px 0 10px 5px;
+    margin-left: -5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #414141;
+    background-color: #fff;
+    border-width: 1px 2px 2px 1px;
+    border-style: solid;
+    border-color: #c6c2b8 #aaa392 #aaa392 #c6c2b8;
+    transition: all 0.2s ease;
+    width: 100%;
+    &:focus {
+      outline: 0;
+      box-shadow: 0;
+      border-color: #414141;
+    }
+  }
+  .views-submit-button {
+    display: none;
+  }
+}
+
+.social-sharing {
+  text-align: center;
+  h3 {
+    margin: 5px 0;
+  }
+}
+.social-sharing__list {
+  margin: 0;
+  padding: 0;
+}
+.social-sharing__link {
+  display: inline-block;
+  margin: 0 1%;
+  padding: 0;
+  a {
+    display: block;
+    line-height: 45px;
+    padding: 0 25px;
+    color: white;
+    @include transition-property(background);
+    @include transition-duration(0.2s);
+    span {
+      display: none;
+    }
+    &:hover {
+      @include transition-property(background);
+      @include transition-duration(0.2s);
+      background: #eaeaea;
+      color: inherit;
+    }
+  }
+}
+.social-sharing__link--twitter a {
+  background: #26c4f1;
+}
+.social-sharing__link--linkedin a {
+  background: #007bb6;
+}
+.social-sharing__link--google a {
+  background: #e93f2e;
+}
+
+.bitcoin-tip {
+  text-align: center;
+  font-family: monospace;
+  font-size: 12.5px;
+  .bitcoin-tip--address {
+    margin-top: 12px;
+    a {
+      border-bottom: 0.5px dotted;
+      word-break: break-all;
+    }
+  }
+}

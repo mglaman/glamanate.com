@@ -1,0 +1,20 @@
+uuid: 1e884e0e-29ea-4bde-b66b-7c56b278aa6e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bootstrap_glamanate
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: bootstrap_glamanate_local_actions
+theme: bootstrap_glamanate
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

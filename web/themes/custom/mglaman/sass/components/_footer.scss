@@ -1,0 +1,18 @@
+.l-footer-bottom {
+  @include pie-clearfix;
+  background-color: rgba(black, 0.95);
+  border-bottom: 1px solid #141414;
+  color: #C2C2C2;
+}
+
+.code__is__poetry {
+  float: left;
+  padding-top: 10px;
+  font-family: $serif;
+}
+.powered__by__pantheon {
+  border: 0;
+  float: right;
+  position: relative;
+  top: 10px;
+}

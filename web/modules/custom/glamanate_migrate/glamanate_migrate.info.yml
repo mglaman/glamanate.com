@@ -1,0 +1,6 @@
+name: Glamanate Migration
+description: Provides extra migration things
+core: 8.x
+type: module
+dependencies:
+  - migrate_drupal

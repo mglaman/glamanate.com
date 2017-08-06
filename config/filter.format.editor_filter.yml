@@ -1,0 +1,61 @@
+uuid: 65463a96-aa4c-4d6c-943f-cf3c156d5196
+langcode: en
+status: true
+dependencies:
+  module:
+    - codefilter
+    - glamanate_filters
+_core:
+  default_config_hash: sssN3b4bklvDkXf9Oi_DBIx0g_-cbLw1N1IGn0p0rR0
+name: 'Editor Filter'
+format: editor_filter
+weight: 0
+filters:
+  codefilter:
+    id: codefilter
+    provider: codefilter
+    status: true
+    weight: -43
+    settings:
+      nowrap_expand: '1'
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: -38
+    settings:
+      filter_url_length: 72
+  oembed:
+    id: oembed
+    provider: glamanate_filters
+    status: true
+    weight: -50
+    settings:
+      options: ''
+      view_mode: full
+      autoembed: '1'
+  gist_filter:
+    id: gist_filter
+    provider: glamanate_filters
+    status: true
+    weight: -44
+    settings:
+      gist_filter_display_method: code
+  media_filter:
+    id: media_filter
+    provider: glamanate_filters
+    status: true
+    weight: -39
+    settings: {  }
+  twitter_links:
+    id: twitter_links
+    provider: glamanate_filters
+    status: true
+    weight: -47
+    settings: {  }
+  twitter_username:
+    id: twitter_username
+    provider: glamanate_filters
+    status: true
+    weight: -46
+    settings: {  }

@@ -1,0 +1,20 @@
+uuid: 8493fca8-acef-4cdc-8b80-f3bc57b25538
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main-menu
+    parent: 'main-menu:0:'
+_core:
+  default_config_hash: KuyA4NHPXcmKAjRtwa0vQc2ZcyrUJy6IlS2TAyMNRbc
+name: Page
+type: page
+description: 'Regular page that can be added to the website.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

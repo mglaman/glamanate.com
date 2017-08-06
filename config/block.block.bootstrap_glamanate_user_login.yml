@@ -1,0 +1,20 @@
+uuid: 386e5dc7-38db-4ada-b742-406688e99d17
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - bootstrap_glamanate
+id: bootstrap_glamanate_user_login
+theme: bootstrap_glamanate
+region: sidebar_second
+weight: -4
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility: {  }

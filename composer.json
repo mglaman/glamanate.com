@@ -1,0 +1,107 @@
+{
+    "name": "drupal-composer/drupal-project",
+    "description": "Project template for Drupal 8 projects with composer",
+    "type": "project",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "",
+            "role": ""
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "require": {
+        "composer/installers": "^1.2",
+        "drupal-composer/drupal-scaffold": "^2.2",
+        "cweagans/composer-patches": "~1.0",
+        "drupal/core": "^8.3",
+        "drush/drush": "~8.0",
+        "drupal/console": "~1.0",
+        "drupal/metatag": "^1",
+        "drupal/http2_server_push": "1.x-dev",
+        "drupal/simple_sitemap": "^2.8",
+        "drupal/disqus": "1.x-dev",
+        "drupal/pathauto": "^1",
+        "drupal/search_api": "^1",
+        "drupal/honeypot": "^1.23",
+        "drupal/google_analytics": "^2.1",
+        "drupal/scheduler": "^1.0@alpha",
+        "drupal/redirect": "^1.0@alpha",
+        "drupal/codefilter": "1.x-dev",
+        "drupal/markdown": "^1.1",
+        "drupal/webform": "^5.0@beta",
+        "drupal/admin_toolbar": "^1.19",
+        "alb/oembed": "^1.1",
+        "drupal/bootstrap": "^3.5"
+    },
+    "require-dev": {
+        "behat/mink": "~1.7",
+        "behat/mink-goutte-driver": "~1.2",
+        "jcalderonzumba/gastonjs": "~1.0.2",
+        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
+        "mikey179/vfsStream": "~1.2",
+        "phpunit/phpunit": "~4.8",
+        "symfony/css-selector": "~2.8",
+        "drupal/migrate_upgrade": "^3.0",
+        "drupal/migrate_plus": "^3.0",
+        "drupal/migrate_tools": "^3.0"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "bin-dir": "bin",
+        "sort-packages": true
+    },
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ]
+    },
+    "scripts": {
+        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ]
+    },
+    "extra": {
+        "patches": {
+            "drupal/metatag": {
+                "2563649: Migrations: basic entities":
+                "https://www.drupal.org/files/issues/metatag-n2563649-62.patch"
+            },
+            "drupal/core": {
+                "2788777 - Allow a profile to be installed from existing config":
+                "https://www.drupal.org/files/issues/2788777-33.patch",
+                "2880374 - Experimental modules should not have warnings after being installed":
+                "https://www.drupal.org/files/issues/2880374-remove-experimental-warnings-6.patch",
+                "2869592 - Disabled update module shouldn't produce a status report warning":
+                "https://www.drupal.org/files/issues/2869592-remove-update-warning-7.patch"
+            }
+        },
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
+        }
+    }
+}

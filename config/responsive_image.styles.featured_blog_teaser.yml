@@ -1,0 +1,19 @@
+uuid: c04fc39e-21f8-4b8d-9757-aa623e59da8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.homepage_
+    - image.style.max_1300x1300
+  theme:
+    - bootstrap
+id: featured_blog_teaser
+label: 'Featured blog teaser'
+image_style_mappings:
+  -
+    breakpoint_id: bootstrap.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: homepage_
+breakpoint_group: bootstrap
+fallback_image_style: max_1300x1300

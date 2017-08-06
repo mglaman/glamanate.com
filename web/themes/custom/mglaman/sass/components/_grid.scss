@@ -1,0 +1,26 @@
+.visible-desktop {
+  display: none;
+}
+
+.l-constrained {
+  width: 95%;
+  margin: 0 auto;
+  @include pie-clearfix;
+}
+
+@include breakpoint($tab, true) {
+  .l-constrained {
+    width: 90%;
+  }
+  .visible-mobile {
+    display: none;
+  }
+  .visible-desktop {
+    display: inherit;
+  }
+}
+@include breakpoint($desk, true) {
+  .l-constrained {
+    width: 85%;
+  }
+}

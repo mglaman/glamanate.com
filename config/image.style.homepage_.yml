@@ -1,0 +1,14 @@
+uuid: e5296459-d5c2-4f06-809f-135ad52a04bb
+langcode: en
+status: true
+dependencies: {  }
+name: homepage_
+label: 'Homepage Large'
+effects:
+  39d0fab9-2c12-45cb-befe-3fad2fbb1907:
+    uuid: 39d0fab9-2c12-45cb-befe-3fad2fbb1907
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 900
+      height: 75

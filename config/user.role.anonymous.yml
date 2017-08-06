@@ -1,0 +1,14 @@
+uuid: 29696ebf-4a7f-430a-a358-1804c8351fae
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'view disqus comments'
+  - 'view files'

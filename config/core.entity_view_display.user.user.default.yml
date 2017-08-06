@@ -1,0 +1,56 @@
+uuid: 9dd9817b-5293-4cd6-a17e-6dc8fda78e50
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_links
+    - field.field.user.user.field_metatag
+    - field.field.user.user.field_resume
+    - field.field.user.user.user_picture
+  module:
+    - glamanate_filters
+    - image
+    - link
+    - user
+_core:
+  default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_links:
+    label: above
+    weight: 1
+    type: link
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    region: content
+  field_resume:
+    label: above
+    weight: 0
+    type: file_rendered
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  member_for:
+    weight: 5
+    region: content
+  user_picture:
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: content
+    type: image
+    weight: 6
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_metatag: true

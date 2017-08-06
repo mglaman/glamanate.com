@@ -1,0 +1,22 @@
+
+
+
+.node-article--featured-image {
+  .article--intro {
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+  &.node-teaser .article--intro {
+    background-size: cover;
+  }
+}
+.social-share--article {
+  margin: 20px 0;
+  .social-sharing__list,
+  h4 {
+    display: inline;
+  }
+  .social-sharing__link {
+  }
+}

@@ -1,0 +1,21 @@
+<?php
+
+use Drupal\migrate\Plugin\MigrateSourceInterface;
+use Drupal\migrate\Plugin\MigrationInterface;
+use Drupal\migrate\Row;
+
+/**
+ * Implements hook_migrate_prepare_row().
+ */
+function glamanate_migrate_migrate_prepare_row(Row $row, MigrateSourceInterface $source, MigrationInterface $migration) {
+  if ($migration->id() == 'd7_node') {
+    print PHP_EOL . 'Running prepare_row for migration ' . $migration->label() . PHP_EOL;
+    throw new \Drupal\migrate\MigrateSkipProcessException();
+    if ($row->hasSourceProperty('body')) {
+      $transform = new \Drupal\glamanate_migrate\Plugin\migrate\process\FixMediaTags([], 'fix_media_tags', ['id' => 'fix_media_tags']);
+      $value = ' ' . $row->getSourceProperty('body') . ' ';
+      $value = preg_replace_callback('/\[\[.*?\]\]/s', [$transform, 'replaceToken'], $value);
+      $row->setSourceProperty('body', $value);
+    }
+  }
+}

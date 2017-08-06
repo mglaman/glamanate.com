@@ -1,0 +1,22 @@
+uuid: a136b4c8-5c34-4f5b-887f-e6ce84a3dbaa
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_glamanate
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: bootstrap_glamanate_mglaman_system_main
+theme: bootstrap_glamanate
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

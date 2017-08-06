@@ -1,0 +1,15 @@
+uuid: 9d9ac751-d511-4f17-adc8-d6adde25476a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'edit webform components'
+  - 'view disqus comments'
+  - 'view files'

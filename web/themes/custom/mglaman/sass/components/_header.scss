@@ -1,0 +1,44 @@
+.l-navigation {
+  @include pie-clearfix;
+  padding: 12px 0;
+  background-color: #fff;
+  box-shadow: 0 0 1px rgba(black, 0.35);
+  ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  li {
+    display: inline-block;
+    a {
+      padding: 0 12px;
+      color: #444;
+      font-weight: 600;
+      text-transform: lowercase;
+      &:hover {
+        color: #b4b4b4;
+      }
+    }
+  }
+}
+.l-branding {
+  margin: 3% 0 5%;
+  text-align: center;
+  .site__name {
+    margin: 0;
+    color: darken(white, 3%);
+    font-size: 50px;
+    font-weight: 100;
+    line-height: 50px;
+    @include transition(all, 0.2s, ease-out);
+
+    &:hover {
+      @include transform(rotate(-3deg));
+      @include transition(all, 0.2s, ease-out);
+    }
+  }
+  .site__slogan {
+    padding: 2px;
+    font-size: 13px;
+  }
+}

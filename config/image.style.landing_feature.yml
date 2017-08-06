@@ -1,0 +1,15 @@
+uuid: 500bea76-8344-4f79-8336-130205dbc0af
+langcode: en
+status: true
+dependencies: {  }
+name: landing_feature
+label: 'Landing Feature'
+effects:
+  d1b27736-8a54-4642-826a-1eb77c746606:
+    uuid: d1b27736-8a54-4642-826a-1eb77c746606
+    id: image_scale
+    weight: 1
+    data:
+      width: 325
+      height: null
+      upscale: false

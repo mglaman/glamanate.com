@@ -1,0 +1,19 @@
+name: MGlaman
+description: A beautiful one column typographically focused blog theme designed to look like medium.com
+type: theme
+core: 8.x
+base theme: stable
+libraries:
+  - mglaman/font-awesome
+  - mglaman/fonts
+  - mglaman/global-styling
+
+regions:
+  page_top: Page top
+  header: Header
+  highlight: Highlight
+  help: Help
+  content: Content
+  sidebar_first: First sidebar
+  footer: Footer
+  page_bottom: Page bottom

@@ -1,0 +1,22 @@
+uuid: 54b024e3-2c3c-4d72-9711-e5461c0fbe2c
+langcode: en
+status: true
+dependencies:
+  module:
+    - aggregator
+  theme:
+    - seven
+id: shiny_aggregator_feed_1
+theme: seven
+region: content
+weight: 0
+provider: null
+plugin: aggregator_feed_block
+settings:
+  id: aggregator_feed_block
+  label: ''
+  provider: aggregator
+  label_display: '0'
+  block_count: 10
+  feed: '1'
+visibility: {  }
