@@ -7,7 +7,7 @@ dependencies:
     - scheduler
 third_party_settings:
   menu_ui:
-    parent: 'main:'
+    parent: 'main-menu:0:'
     available_menus:
       - main
   scheduler:

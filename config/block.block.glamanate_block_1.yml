@@ -1,0 +1,25 @@
+uuid: 2adbcde9-d1e4-42f0-bd7c-67a9552bdede
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:606d7801-9733-438c-ac2f-d00c66fecd07'
+  module:
+    - block_content
+  theme:
+    - glamanate
+id: glamanate_block_1
+theme: glamanate
+region: ''
+weight: 0
+provider: null
+plugin: 'block_content:606d7801-9733-438c-ac2f-d00c66fecd07'
+settings:
+  id: 'block_content:606d7801-9733-438c-ac2f-d00c66fecd07'
+  label: ''
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

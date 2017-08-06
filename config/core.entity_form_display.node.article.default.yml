@@ -52,7 +52,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   disqus:
-    weight: 31
+    weight: 47
     settings: {  }
     third_party_settings: {  }
     type: disqus_comment
@@ -86,7 +86,7 @@ content:
     third_party_settings: {  }
     region: content
   field_metatag:
-    weight: 46
+    weight: 48
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose
@@ -119,6 +119,9 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  scheduler_settings:
+    weight: 20
+    region: content
   sticky:
     type: boolean_checkbox
     settings:

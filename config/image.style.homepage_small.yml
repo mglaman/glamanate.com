@@ -1,0 +1,14 @@
+uuid: 795ec556-f5d1-415d-8856-736df930da1f
+langcode: en
+status: true
+dependencies: {  }
+name: homepage_small
+label: 'Homepage Small'
+effects:
+  f09e4a83-e259-4c51-90ba-587437d315ba:
+    uuid: f09e4a83-e259-4c51-90ba-587437d315ba
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 485
+      height: 100

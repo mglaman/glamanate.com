@@ -1,0 +1,14 @@
+uuid: b53b8a42-ca39-4dd2-83b8-619e9510e11c
+langcode: en
+status: true
+dependencies: {  }
+name: homepage_medium
+label: 'Homepage Medium'
+effects:
+  e0beda43-d0fa-4d94-be1a-223739e363a2:
+    uuid: e0beda43-d0fa-4d94-be1a-223739e363a2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 700
+      height: 135

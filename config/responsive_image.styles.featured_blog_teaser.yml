@@ -4,7 +4,8 @@ status: true
 dependencies:
   config:
     - image.style.homepage_
-    - image.style.max_1300x1300
+    - image.style.homepage_medium
+    - image.style.homepage_small
   theme:
     - bootstrap
 id: featured_blog_teaser
@@ -15,5 +16,20 @@ image_style_mappings:
     multiplier: 1x
     image_mapping_type: image_style
     image_mapping: homepage_
+  -
+    breakpoint_id: bootstrap.screen-md-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: homepage_medium
+  -
+    breakpoint_id: bootstrap.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: homepage_medium
+  -
+    breakpoint_id: bootstrap.screen-xs-max
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: homepage_small
 breakpoint_group: bootstrap
-fallback_image_style: max_1300x1300
+fallback_image_style: homepage_

@@ -5,8 +5,8 @@ dependencies: {  }
 name: landing_feature
 label: 'Landing Feature'
 effects:
-  d1b27736-8a54-4642-826a-1eb77c746606:
-    uuid: d1b27736-8a54-4642-826a-1eb77c746606
+  7f488d11-7b6a-4034-8562-25d8bb836ddc:
+    uuid: 7f488d11-7b6a-4034-8562-25d8bb836ddc
     id: image_scale
     weight: 1
     data:

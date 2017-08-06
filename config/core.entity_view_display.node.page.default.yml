@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.page.field_metatag
     - node.type.page
   module:
+    - disqus
     - text
     - user
 _core:
@@ -25,12 +26,18 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  disqus:
+    label: hidden
+    type: disqus_comment
+    weight: 20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   links:
     weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  disqus: true
   field_category: true
   field_metatag: true

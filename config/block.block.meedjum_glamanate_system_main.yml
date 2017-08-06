@@ -1,0 +1,20 @@
+uuid: 9cd1cadd-6ff5-44fb-a34f-1267127f2970
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - meedjum_glamanate
+id: meedjum_glamanate_system_main
+theme: meedjum_glamanate
+region: ''
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }

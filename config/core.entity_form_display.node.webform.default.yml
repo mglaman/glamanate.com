@@ -21,7 +21,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_metatag:
-    weight: 31
+    weight: 32
     settings: {  }
     third_party_settings: {  }
     type: metatag_firehose

@@ -1,0 +1,20 @@
+uuid: d46a587e-edba-4e6b-8eef-775e9f189716
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - rubik
+id: rubik_system_main
+theme: rubik
+region: ''
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: ''
+  provider: system
+  label_display: '0'
+visibility: {  }
